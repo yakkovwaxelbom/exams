@@ -10,10 +10,10 @@ def create_card(rank: Rank, suit: Suit) -> dict:
 
 def compare_cards(p1_card: dict, p2_card: dict) -> str:
     if p1_card['value'] > p2_card['value']:
-        return WinnerRound.p1
+        return WinnerRound.p1.value
     elif p1_card['value'] < p2_card['value']:
-        return WinnerRound.p2
-    return WinnerRound.DRAW
+        return WinnerRound.p2.value
+    return WinnerRound.DRAW.value
 
 
 def create_deck() -> list[dict]:

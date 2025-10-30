@@ -25,13 +25,13 @@ class Suit(Enum):
     SPADES = 'S'
 
 
-class WinnerRound:
+class WinnerRound(Enum):
     p1 = 'p1'
     p2 = 'p2'
     DRAW = 'war'
 
 
-class WinnerGame:
+class WinnerGame(Enum):
     DRAW = 0
     p1 = 1
     p2 = 2

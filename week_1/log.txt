@@ -1,0 +1,12 @@
+CWD: /home/mefathim/כללי/צהל/exams/exams/week_1
+PYTHONPATH: /home/mefathim/כללי/צהל/exams/exams
+sys.path: ['/home/mefathim/כללי/צהל/exams/exams/week_1', '/home/mefathim/כללי/צהל/exams/exams', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/mefathim/.local/lib/python3.10/site-packages', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+
+---------------
+
+CWD: /home/mefathim/כללי/צהל/exams/exams/week_1
+PYTHONPATH: None
+sys.path: ['/home/mefathim/כללי/צהל/exams/exams/week_1', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/mefathim/.local/lib/python3.10/site-packages', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+
+---------------
+

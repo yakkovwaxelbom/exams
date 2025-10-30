@@ -9,7 +9,7 @@ def create_player(name: str) -> dict:
     return {'name': str(name), 'hand': [], 'won_pile': []}
 
 
-def init_game(name_p1 = None, name_p2 = None) -> dict:
+def init_game(name_p1=None, name_p2=None) -> dict:
     deck = shuffle(create_deck())
 
     player_1_name = Faker().name() if name_p1 is None else name_p1
@@ -25,7 +25,7 @@ def init_game(name_p1 = None, name_p2 = None) -> dict:
 def play_round(p1: dict, p2: dict):
     p1_card, p2_card = p1['hand'].pop(), p2['hand'].pop()
     winner = compare_cards(p1_card, p2_card)
-    if winner == WinnerRound.p1:
+    if winner == WinnerRound.p1.value:
         p1['won_pile'].append(p1_card)
         p1['won_pile'].append(p2_card)
     elif winner == WinnerRound.p2:
@@ -83,9 +83,11 @@ def draw(p1, p2, p1_cards, p2_cards):
 
 def winner_with_A_spades(p1, p2):
     if filter(lambda dic: dic['rank'] == 'ACE' and dic['suit'] == Suit.SPADES, p1['won_pile']):
-        return WinnerGame.p1
-    return WinnerGame.p2
+        return WinnerGame.p1.value
+    return WinnerGame.p2.value
 
 
 def no_winner(p1, p2):
-    return WinnerGame.DRAW
+    return WinnerGame.DRAW.value
+
+
